@@ -1,0 +1,347 @@
+@import "./theme.scss";
+/*
+ * Global application theme.
+ * Framework overrides and customization goes here.
+ */
+/* text */
+$text-color-error: $warning-primary;
+/* Buttons */
+$primary-btn-bg: $Nedbank-green-button;
+$primary-btn-bg-hover: $primary-50;
+$primary-btn-bg-disabled: $secondary-disabled;
+$primary-btn-color: $color-greenMedium;
+$primary-btn-color-hover: $Nedbank-white;
+$primary-btn-color-disabled: $Nedbank-white;
+
+$primary-btn-border: $color-greenMedium;
+$primary-btn-border-hover: transparent;
+$primary-btn-border-disabled: transparent;
+$secondary-btn-bg: $Nedbank-white;
+$secondary-btn-bg-hover: $secondary-color;
+$secondary-btn-bg-disabled: $secondary-btn-bg;
+$secondary-btn-color: $color-greenMedium;
+
+$secondary-btn-border: 2px solid $secondary-color;
+$secondary-btn-border-hover: $secondary-color;
+$secondary-btn-border-disabled: $color-greyLightest;
+$secondary-btn-color: $secondary-color;
+$secondary-btn-color-hover: $Nedbank-white;
+$secondary-btn-color-disabled: $color-greyLightest;
+
+$ghost-btn-bg: transparent;
+$ghost-btn-bg-hover: $color-greyLightest;
+$ghost-btn-bg-disabled: transparent;
+
+$ghost-btn-color: $secondary-color;
+$ghost-btn-color-hover: $secondary-color;
+$ghost-btn-color-disabled: $color-greyLightest;
+
+$ghost-btn-border: $color-greenMedium;
+$ghost-btn-border-hover: transparent;
+$ghost-btn-border-disabled: transparent;
+
+/* loader */
+$loader-color: $Nedbank-white;
+$loader-bg: $primary-btn-bg;
+$loader-mask-bg: rgba($Nedbank-white, 0.7);
+
+/* brand */
+
+$heritage: $Nedbank-green-dark;
+$primary: $Nedbank-green-lighter;
+$secondary: $Nedbank-green-button;
+$tertiary: $secondary;
+$mid-light-green:$Nedbank-norm-light-green;
+
+/* darken on hover */
+$primary-hover: $Nedbank-green-lighter;
+
+/* alert colours */
+
+$warning-yellow: $warning-message-color;
+$success-green: $Nedbank-norm-white;
+$error-red: $error-alert-color;
+$alert-whitish-orange :$whitish-orange;
+$warning-dark-orange : $alert-dark-orange-warning;
+$border-alert-warning :$light-orange;
+
+/* COMMON REBRANDING */
+
+$primary-color: $secondary;
+$btn-secondary-disabled: $secondary-disabled;
+
+/* INPUT */
+$input-focused: $input-field-focused;
+$input-default: $input-field-default;
+$input-disabled: $input-field-disabled;
+$input-disabled-bg: $input-field-disabled-bg;
+$input-placeholder: $primary-grey;
+$helper-text-grey: $help-text-grey;
+$input-has-data: $secondary;
+
+/* Dropdown */
+
+$dropdown-focused: $dropdown-field-focused;
+$dropdown-default: $dropdown-field-default;
+$dropdown-disabled: $dropdown-field-disabled;
+$dropdown-disabled-bg: $dropdown-field-disabled-bg;
+$dropdown-error: $dropdown-field-error;
+
+$line-height-32: $Nedbank-line-height-32;
+$line-height-25: $Nedbank-line-height-25;
+$line-height-24: $Nedbank-tab-text-line-height;
+$line-height-16: $Nedbank-line-height-16;
+$line-height-17: $Nedbank-line-height-17;
+$line-height-18: $Nedbank-line-height-18;
+$line-height-22: $Nedbank-line-height-22;
+
+$nedbank-font-size-30: $font-size-30;
+$nedbank-font-size-20: $font-size-20;
+$nedbank-font-size-12: $font-size-12;
+
+/* Modal */
+$modal-text: $notes-text-black-color;
+
+/* SEARCH */
+
+$search-focused: $search-field-focused;
+$search-active: $secondary;
+$search-default: $search-field-default;
+
+/* fileupload */
+
+$file-upload-focused: $search-field-focused;
+
+/* date picker */
+$date-picker-placeholder: $date-picker-field-placeholder;
+$date-picker-defualt: $primary-grey;
+$date-picker-focused: $primary-focus;
+$date-picker-hover: $btn-primary-hover;
+$date-picker-green: $primary-color;
+
+/* PRIMARY BUTTON */
+$btn-primary: $secondary;
+$btn-primary-hover: $btn-primary-hover;
+$primary-focus: $primary-focus;
+$primary-hover: $btn-primary-hover;
+$primary-white: $white;
+/* SECONDARY BUTTON */
+
+$btn-secondary: $secondary;
+$spinner-secondary-btn-hover: $spinner-secondary-btn-hover;
+$btn-secondary-bg: $secondary-bg-white;
+
+/* CHECKBOX */
+$checkbox-active: $secondary;
+$checkbox-background-white: $white;
+$checkbox-default: $checkbox-field-default;
+$checkbox-disabled-notChecked-border: $checkbox-field-disabled-notChecked-border;
+$checkbox-disabled-notChecked-bg: $checkbox-field-disabled-notChecked-bg;
+$checkbox-disabled-Checked: $checkbox-field-disabled-Checked;
+$checkbox-light-green-checked:$Nedbank-light-green-checkbox;
+
+/* TOGGLE */
+
+$toggle-default: $toggle-field-default;
+
+/* Radio Button */
+
+$radioButton-default: $radio-button-default;
+$radioButton-disabled-notChecked-border: $radio-button-disabled-notChecked-border;
+$radioButton-disabled-notChecked-bg: $radio-button-disabled-notChecked-bg;
+$radioButton-disabled-Checked: $radio-button-disabled-Checked;
+
+/* Currency */
+
+$currency-R-text-grey: $primary-grey;
+
+/* SELECT */
+
+$select-default: $select-field-default;
+$select-focused: $select-field-focused;
+$select-completed: $select-field-completed;
+$select-error: $select-field-error;
+$select-disabled-border: $select-field-disabled-border;
+$select-disabled-bg: $select-field-disabled-bg;
+
+/* TOOLTIPS */
+
+$warning-alert-bg: $alert-orange-warning;
+$alert-informative: $alert-informative-bg;
+$alert-bg-error: $alert-bg-error-color;
+$alert-bg-success: $alert-bg-success-color;
+$alert-text-black: $notes-text-black-color;
+
+$tooltip-medium-grey: $tooltip-grey;
+$notes-text-bg: $notes-text-grey-bg;
+$notes-text-black: $notes-text-black-color;
+/* Accordion */
+
+$accordion-arrow-grey: $accordion-arrow-defualt-grey;
+
+/* phone number */
+$phone-number-default: $primary-grey;
+$phone-number-disabled-bg: $input-field-disabled-bg;
+$phone-number-disabled-border: $input-field-disabled;
+/* TYPOGRAPHY */
+
+$button-text-semibold: $text-libreFranklin-semibold;
+$text-regular: $text-libreFranklin-regular;
+$text-medium: $text-libreFranklin-medium;
+$text-libreFranklin-semibold: $text-libreFranklin-semibold;
+
+$text-grey: $text-grey-color;
+$text-green: $text-green-color;
+$text-light-green: $color-greenLight;
+$text-black: $text-black-color;
+$text-brown: $text-dark-brown-color;
+$border: $border-color;
+$grey-light: $Nedbank-grey-light;
+$loading-black: $light-black;
+
+/* header */
+$divider-line: $line;
+$Nedbank-rebrand-header-height: $header-height;
+$dark-grey-help: $dark-grey;
+$normal-grey-disabled: $Nedbank-norm-gray;
+$black-light-gray-header:$black-light-gray;
+
+
+/* background-color */
+$hover-color: $btn-primary-hover;
+$drag-black: $text-black-color;
+$drag-light-grey: $light-grey;
+$background-green: $background-color;
+$background-white: $white;
+$bg-light-white: $color-white;
+$header-black: $text-black-color;
+$text-dark-grey: $dark-grey;
+$common-grey: $dark-grey;
+$medium-grey: $medium-grey-color;
+$lighter-grey: $very-light-grey;
+$grey-bold: $Nedbank-grey-bold;
+$Nedbank-light-grey: $Nedbank-grey;
+$smoke-white: $antiflash-white;
+$placeholder-grey: $primary-grey;
+$text-medium-grey: $primary-grey;
+$common-almost-white: $almost-white;
+$gainsboro-grey: $gainsboro;
+$warning-red: $warning-red-color;
+$lighter-white: $light-white;
+$gray-dark: $gray-dark-dark;
+$border-bottom: $border-bottom-color;
+$color-grey-Light: $color-greyLight;
+$greyLightest: $color-greyLightest;
+$green-mid: $Nedbank-green-mid;
+$greenDark-20: $color-greenDark-20;
+$Nedback-popup-bg: $Nedback-popup;
+$NedBank-light-gray-white: $light-gray-white;
+/* breadcrumbs */
+$breadcrumb-grey: $text-grey-color;
+$breadcrumb-hover: $btn-primary-hover;
+
+/* navigation bar */
+$navbar-item-selected: $btn-primary-hover;
+$nav-subItem: $white;
+$navbar-subItem-hover: $white;
+$navbar-black: $text-black-color;
+$navbar-white: $white;
+
+/*background*/
+$background-almost-white-color: $almost-white;
+$background-nedbank-white-color: $Nedbank-white;
+$background-greenMedium-color: $color-greenMedium;
+$background-white-color: $white;
+$background-medium-grey: $medium-grey;
+$background-very-light-grey: $very-light-grey;
+$background-color-almost-light-red: $almost-light-red;
+$background-light-medium-grey: $light-medium-grey;
+$background-light-white-gray: $light-white-gray;
+$background-light-green-shade: $light-green-shade;
+$background-darkest-grey: $darkest-grey;
+$background-medium-grey-shade: $medium-grey-shade;
+$wrapper-background-white-gray : $white-light-gray;
+$background-light-pink: $light-pink;
+
+/*color*/
+$nedbank-green-lighter-color: $Nedbank-green-lighter;
+$nedbank-redish-color: $Nedbank-redish;
+$nedbank-white: $Nedbank-white;
+$nedbank-grey-bold-color: $Nedbank-grey-bold;
+$black-color: $dark-black;
+$light-grey-color: $light-grey;
+$medium-grey-color: $medium-grey;
+$almost-dark-black-color: $almost-dark-black;
+$darkest-grey-color: $darkest-grey;
+$medium-grey-shade-color: $medium-grey-shade;
+$white-color: $white;
+$dark-grey-light-color: $dark-grey-light;
+$dark-grey-shade-color: $dark-grey-shade;
+$dark-black-color: $black;
+$dynamic-popup-h1-color: $dark-grey;
+$dynamic-popup-p-color: $dark-grey;
+$wrapper-datepicker-warning-red: $warning-red-color;
+$stepper-featureauth-text-color: $dark-grey-light;
+$light-gray-color: $Nedbank-lable-color;
+
+/*border*/
+$border-light-grey: 2px solid $very-light-grey;
+$border-nedbank-whitish: solid 1px $smoke-white;
+$border-nedbank-side: $Nedbank-side-border;
+$border-light-grey: 2px solid $light-grey;
+$border-primary-grey: 2px solid $primary-grey;
+$border-gray-dark: solid 1px $gray-dark;
+$border-nedbank-white-light: solid 2px $Nedbank-white-light;
+$border-nedbank-red-engine: 4px solid $Nedbank-red-engine;
+$solid-border-white: $Nedbank-white-shadow;
+$border-bottom-green: $Nedbank-green-mid-border;
+$grey-button-border: 1px solid $dim-grey;
+$border-bottom-grey: 1px solid $light-grey;
+$border-bottom-primary-grey: 1px solid $primary-grey;
+$border-light-medium-grey: $light-medium-grey;
+$border-lighter-shade-grey: $lighter-shade-grey;
+$border-light-base-green: $light-base-green;
+$border-medium-grey: $medium-grey;
+$border-very-light-grey: $very-light-grey;
+$border-white: $border-white;
+$border-black: 1px solid $dark-grey-light;
+$border-white-disabled: 2px solid $border-white;
+$border-light-white-gray: 1px solid $light-white-gray;
+$border-grey-light-divider : $Nedbank-side-divider;
+
+/*common*/
+$nedbank-margin-50: $Nedbank-margin-50;
+$value-100: $Value-100;
+
+$wrapper-toggle-dark-grey-color: $dark-grey-shade;
+$wrapper-toggle-active-color: $light-green-shade;
+$wrapper-checkbox-active-color: $light-green-shade;
+$gray-dark: $gray-dark-light;
+$gray-light: $light-grey-disabled;
+$almost-white-new: $almost-white;
+$disbaled-white: $almost-white;
+
+$border-color: $white-light;
+$profile-header-background-color: $Nedbank-white;
+$profile-selection-list-border-color: $profile-selection-border-color;
+$profile-selection-label-color: $Nedbank-grey-bold;
+
+$Nedbank-domestic-header-height: $header-height-80;
+$Nedbank-domestic-close-border-color: $light-border-color;
+$domestic-button-hover: $profile-selection-button-hover;
+$domestic-button-border: $profile-selection-button-border;
+$domestic-table-border: $table-border;
+
+$medium-grey-white : $medium-grey-color;
+$medium-light-green : $Nedbank-green-mid-border;
+$nedbank-grey: $Nedbank-grey-bold;
+$warning-yellow-payment: $warning-yellow-orange;
+
+$Nedbank-grey-light : $Nedbank-lighter-grey;
+$Nedbank-light-grey-white: $Nedbank-white-dark;
+
+$domestic-popup-heading : $domestic-heading-popup;
+$border-popup: $NedBank-line-span;
+$wrapper-medium-light-gray-border: $medium-light-gray;
+$dark-grey-background-dropdown-heading: $dark-grey-background;
+$grey-light-heading: $dim-grey;

@@ -1,0 +1,343 @@
+// @import "../assets/sass/partials/mixins/flexbox";
+@import "../sass/partials/mixins/flexbox";
+
+
+@mixin notification-banner() {
+   .nlsg-c-alert {
+      &--success {
+         padding: 20px 0 !important;
+
+         &::before {
+            position: relative !important;
+            margin-right: 20px !important;
+         }
+      }
+
+      &--error {
+         padding: 20px 0 !important;
+
+         &::before {
+            position: relative !important;
+            margin-right: 20px !important;
+         }
+      }
+   }
+}
+@mixin nlsg-c-background-icon($background, $position, $size, $cursor) {
+   background: $background-green;
+   background-position: $position;
+   background-size: $size;
+   cursor: $cursor; 
+}
+
+@mixin nlsg-c-iconStyle($position, $top, $right, $content) {
+   position: $position;
+   top: $top;
+   right: $right;
+   content: $content
+}
+
+@mixin default-text {
+  font-family: $text-regular;
+  font-weight: $font-weight-500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: $dark-grey;
+}
+
+@mixin loaderClass {
+  position: relative;
+  min-height: 200px;
+  top: 60px;
+  text-align: center;
+  left: 50%;
+  width: 100px;
+  ::ng-deep #spin .chrome .nlsg-c-txSpinnerMargin {
+    left: -54%;
+    position: absolute;
+    }
+}
+
+@mixin btn-small {
+  cursor: pointer;
+  max-width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: $padding-element-top;
+  border: solid 2px $secondary;
+  text-align: center;
+  outline: none;
+  color: $secondary;
+}
+
+@mixin box-shadow($val) {
+  box-shadow: $val;
+  -webkit-box-shadow: $val;
+  -moz-box-shadow: $val;
+  -ms-box-shadow: $val;
+  -o-box-shadow: $val;
+}
+
+@mixin border-radius($val) {
+  border-radius: $val;
+  -webkit-border-radius: $val;
+  -moz-border-radius: $val;
+  -ms-border-radius: $val;
+  -o-border-radius: $val;
+}
+
+@mixin box-sizing($val: border-box) {
+  box-sizing: $val;
+  -webkit-box-sizing: $val;
+  -moz-box-sizing: $val;
+  -ms-box-sizing: $val;
+  -o-box-sizing: $val;
+}
+
+@mixin svg-image-full-path($base-path, $image-name, $width: 100%, $height: 100%, $extension: 'svg', $path: $base-path) {
+  position: relative;
+  $asset-path:"./../assets/images/icons";
+  &::before {
+    content: url(#{$asset-path}/#{$image-name}.#{$extension});
+    width: $width;
+    height: $height;
+  }
+}
+
+@mixin svg-image-full-path1($base-path, $image-name, $width: 100%, $height: 100%, $extension: 'svg', $path: $base-path) {
+  position: relative;
+  $asset-path:"./../assets/images/icons";
+  &::before {
+    content: url(#{$asset-path}/#{$image-name}.#{$extension});
+    width: $width;
+    height: $height;
+    max-width: $width;
+    max-height: $height;
+    display: inline-block;
+  }
+}
+
+@mixin get-svg-image($base-path, $image-name, $width: width, $height: height, $extension: 'svg') {
+  display: inline-block;
+  position: relative;
+  $asset-path:"./../assets/images/icons";
+  background-image: url(#{$asset-path}/#{$image-name}.#{$extension});
+  width: $width;
+  height: $height;
+}
+
+@mixin gif-image-full-path($base-path, $image-name, $width: 100%, $height: 100%, $extension: 'gif', $path: $base-path) {
+  position: relative;
+  $asset-path:"./../assets/images/icons";
+  &::before {
+    content: url(#{$asset-path}/#{$image-name}.#{$extension});
+    width: $width;
+    height: $height;
+  }
+}
+
+@mixin field {
+  width: 400px;
+  height: 50px;
+  border: solid 2px $input-default;
+  padding-top: 5px;
+  font-family: $text-regular;
+  margin-bottom: 4px;
+}
+
+@mixin tooltip-icon {
+  margin-right: 7px;
+  margin-top: 3px;
+  height: 12px;
+  width: 12px;
+  float: right;
+  cursor: pointer;
+  @include svg-image-full-path1($svg-path, "thin-0552_about_question_faq_help", 12px, 14px);
+}
+
+@mixin transition($color, $val) {
+  transition: $color $val;
+  -webkit-transition: $color $val;
+  -moz-transition: $color $val;
+  -ms-transition: $color $val;
+  -o-transition: $color $val;
+}
+
+@mixin appearance($val) {
+  transition: $val;
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -ms-transition: $val;
+  -o-transition: $val;
+}
+
+
+@mixin browser-support() {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+}
+
+@mixin translate($val) {
+  -webkit-transform: translateY($val);
+  -ms-transform: translateY($val);
+  transform: translateY($val);
+}
+
+@mixin multi-translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+  }
+
+@mixin webkit-scrollbar {
+  &::-webkit-scrollbar {
+    width: 9.92px;
+    height: 69.92px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: $Nedbank-box-shadow;
+    background-color: $Nedbank-box-background;
+  }
+}
+
+@mixin data-description() {
+   -ms-word-wrap: break-word;
+   word-wrap: break-word;
+}
+@mixin scrollbar ($width, $height, $background-color, $border-radius, $foreground-color) {
+   &::-webkit-scrollbar {
+      width: $width;
+      height: $height;
+      background-color: $Nedbank-box-shadow;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: $border-radius;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: $background-color;
+    }
+    & {
+      scrollbar-face-color: $foreground-color;
+      scrollbar-track-color: $background-color;
+    }
+}
+
+@mixin svg-image-path3( $image-name , $width, $height, $position, $top, $left, $background-color, $opacity, $border-radius, $extension: 'svg') {
+  $asset-path:"./../assets/images/icons";
+  &:after {
+    content: url(#{$asset-path}/#{$image-name}.#{$extension});
+    width: $width;
+    height: $height;
+    position: $position;
+    top: $top;
+    left: $left;
+    background: $background-color;
+    opacity: $opacity;
+    border-radius: $border-radius;
+  }
+}
+
+@mixin get-svg-image1($base-path, $image-name, $width: width, $height: height, $extension: 'svg') {
+  position: absolute;
+  $asset-path:"./../assets/images/icons";
+  background-image: url(#{$asset-path}/#{$image-name}.#{$extension});
+  width: $width;
+  height: $height;
+}
+
+@mixin display($display) {
+   -webkit-display: $display;
+   -moz-display: $display;
+   -ms-display: $display;
+   -o-display: $display;
+   display: $display;
+}
+
+@mixin tooltip-text-hover($val){
+  tr {
+    td:nth-child(#{$val}):hover .nlsg-c-text-hover {
+       display: block;
+    }
+
+    .nlsg-c-text-name {
+       cursor: pointer;
+    
+     .nlsg-c-text-hover  {
+       display: none;
+       width: 200px;
+       background-color: $tooltip-medium-grey;
+       color: $white;
+       text-align: center;
+       border-radius: 6px;
+       padding: 10px 0;
+       position: absolute;
+       z-index: 1;
+       bottom: 10px;
+       font-family: $text-regular;
+       font-size: $font-size-10;
+       left: 134px;
+
+       &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 100%;
+          margin-top: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: transparent $tooltip-medium-grey transparent transparent;
+       }
+     }
+    }  
+ }
+}
+
+@mixin description-text {
+  font-family: $text-regular;
+  color: $medium-grey;
+  position: relative;
+}
+@mixin align-items($align: center) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  -o-align-items: $align;
+  align-items: $align;
+}
+@mixin transform($val) {
+  -webkit-transform: rotate($val) !important;
+  -ms-transform: rotate($val) !important;
+  transform: rotate($val) !important;
+}
+@mixin checkbox-checked($top, $left, $width, $height, $color) {
+  content: '' !important;
+  position: absolute;
+  border: solid $color;
+  border-width: 0 3px 3px 0;
+  left: $left !important;
+  top: $top !important;
+  width: $width !important;
+  height: $height !important;
+  @include transform(45deg);
+}
+@mixin svg-image-from-data-base64($base64, $width: 100%, $height: 100%) {
+  position: relative;
+
+  &::before {
+    content: url(#{$base64});
+    width: $width;
+    height: $height;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,579 @@
+/*
+ * Application global variables.
+ */
+
+// Set Font Awesome font path
+$fa-font-path: "~font-awesome/fonts";
+// ---------------------------------------------------------------------------
+// Bootstrap variables
+//
+// Override Bootstrap variables here to suite your theme.
+// Copy variables you want to customize from node_modules/bootstrap/scss/_variables.scss
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+$gray-dark: #373a3c;
+$gray: #55595c;
+$gray-dark-dark: #555;
+$gray-light: #818a91;
+$gray-lighter-light: #808080;
+$gray-dark-light: #999999;
+$gray-lighter: #eceeef;
+$gray-lightest: #f7f7f9;
+$brand-primary: darken(#428bca, 6.5%);
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$brand-inverse: $gray-dark;
+$orange-light: #fdedd2;
+$pink-light: #f1cfd1;
+$black: #000000;
+$light-black: #000;
+$dim-grey: #949494;
+$dark-black: #000000;
+$white-light: #D2E4DC;
+$light-gray: #7d7575;
+// Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
+// in components.
+
+$font: Libre Franklin Regular;
+$font-arial: Arial;
+$font-size-2: 2px;
+$font-size-4: 4px;
+$font-size-10: 10px;
+$font-size-13: 13px;
+$font-size-14: 14px;
+$font-size-15: 15px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-19: 19px;
+$font-size-12: 12px;
+$font-size-28: 28px;
+$font-size-20: 20px;
+$font-size-22: 22px;
+$font-size-25: 25px;
+$font-size-21: 21px;
+$font-size-20: 20px;
+$font-size-26: 26px;
+$font-size-29: 29px;
+$font-size-30: 30px;
+$font-size-32: 32px;
+$font-size-36: 36px;
+$font-size-40: 40px;
+$font-size-50: 50px;
+$font-size-100: 100px;
+$font-size-60: 60px;
+$Nedbank-green-dark: #115740;
+$Nedbank-green-lighter: #006341;
+$Nedbank-green-mid: #1b613f;
+$Nedbank-green-light: #37a648;
+$Nedbank-green-mid-border: #0c8450;
+$Nedbank-light-green: #4cb675;
+$Nedbank-green: #007f33;
+$Nedbank-norm-light-green:#009639;
+$Nedbank-grey: #9b9b9b;
+$Nedbank-grey-light: #bbbbbb;
+$Nedbank-grey-white: #d8d8d8;
+$Nedbank-grey-bold: #333333;
+$Nedbank-white: #ffffff;
+$Nedbank-cream-white: #fffcfc;
+$Nedbank-light-white: #fff;
+$Nedbank-norm-white: #e4f2d2;
+$nedbank-light-pink: #fdd5d7;
+$Nedbank-norm-gray: #d7d7d7;
+$btn-disabled: #d7d7d7;
+$Nedbank-whitish: #f0f0f0;
+$Nedbank-lighter-white: #dfedcd;
+$Nedbank-light-grey: #666666;
+$Nedbank-white-lighter: #dff8c3;
+$Nedbank-white-shadow: #dddddd;
+$text-medium: Libre Franklin Medium;
+$text-regular: Libre Franklin Regular;
+$antiflash-white: #f0f0f0;
+$Nedbank-white-smoke: #f0f0f0;
+$Nedbank-redish: #e21d16;
+$Nedbank-red-engine: #d42329;
+$Nedbank-light-gray: #d1d1d1;
+$Nedbank-spring-green: #007f33;
+$Nedbank-whisp: #eeeeee;
+$Nedbank-night-rider: #333333;
+$Nedbank-dim-gray: #666666;
+$Nedbank-tint-white: #fefefe;
+$Nedbank-tint-gray: #b6bab8;
+
+$Nedbank-font-size: 14px;
+$Nedbank-white-light: #eeeeee;
+$success-message-rgb: rgba(120, 190, 32, 0.2);
+$darker-grey: #4a4a4a;
+$dark-grey-drag-hover: rgba(0, 0, 0, 0.18);
+$grey-drag-hover: rgba(155, 155, 155, 0.07);
+
+/*Border color*/
+
+$Nedbank-grey-border: #e7e5e8;
+$lighter-shade-grey: #dbede5;
+
+/*Background color*/
+
+$Nedbank-grey-footer: #ebebeb;
+$Nedbank-seleted-row: #f2f7f5;
+$Nedback-popup: #f3f3f3;
+$light-pink: #ffdcdb;
+
+/*Button color*/
+
+$Nedbank-green-button: #0c8450;
+$Value-100: 100%;
+$Value-180: 180%;
+$button-border-radius: 5px;
+$Nedbank-button-width: 146px;
+$Nedbank-button-height: 37px;
+$Nedbank-button-font: Arial;
+$Nedbank-lable-font: Arial;
+$Nedbank-lable-font-size: 14px;
+$Nedbank-lable-color: #828282;
+$flex-padding: 7px;
+$Nedbank-browse-button-width: 96px;
+$Nedbank-browse-button-height: 37px;
+$Nedbank-browse-button-radius: 5px;
+$Nedbank-browse-button-color: #9a9a9a;
+$Nedbank-dropdown-width: 184px;
+$Nedbank-dropdown-height: 38px;
+$Nedbank-input-border: solid 2px #dadada;
+$Nedbank-bottom-border: solid 2px #eeeeee;
+$Nedbank-line-border: solid 4px #0c8450;
+$Nedbank-shadow-border: 0 1px 0 0 #d1d1d1;
+$Nedbank-side-border: solid 2px #bbbbbb;
+$Nedbank-border: solid 2px #0c8450;
+$Nedbank-text-width: 170px;
+$Nedbank-text-height: 33px;
+$Nedbank-header-height: 64px;
+$Nedbank-text-line-height: 33px;
+$Nedbank-tab-text-line-height: 24px;
+$Nedbank-line-height-16: 16px;
+$Nedbank-line-height-17: 17px;
+$Nedbank-line-height-18: 18px;
+$Nedbank-line-height-32: 32px;
+$Nedbank-line-height-25: 25px;
+$Nedbank-line-height-22: 22px;
+$Nedbank-input-font: Arial;
+$Nedbank-input-textallign: left;
+$Nedbank-text-padding-left: 11px;
+$Nedbank-dropdown-padding-left: 5px;
+$Nedbank-div-element-allpadding: 30px 60px;
+$Nedbank-img-rotate-90deg: rotate(90deg);
+$Nedbank-dropdown-arrow-svg: url("./../assets/images/icons/Icon_Dropdown.svg") no-repeat right #ffffff;
+$Nedbank-footer-sticky-position: fixed;
+$Nedbank-footer-sticky-bottom: 0px;
+$Nedbank-footer-width: 100%;
+$Nedbank-bold-font-weight: 700;
+$Nedbank-normal-font-weight: 400;
+$Nedbank-transparent: rgba(254, 254, 254, 0);
+$Nedbank-side-divider: solid 1px #bbbbbb;
+$Nedbank-bottom-divider: solid 1px #dadada;
+//Footer Component
+$footer-height: 97px;
+$Nedbank-grey: #9b9b9b;
+$Nedbank-darkgrey: #535353;
+$padding-element-top: 30px;
+$padding-element-left: 60px;
+$padding-element-right: 40px;
+$padding-heading-accounts-right: 58.7px;
+$padding-heading-close-right: 5.1px;
+$padding-low: 30px;
+$padding-mid: 90px;
+$contextual-font-weight: 300;
+$Nedbank-element-padding: 16px;
+$Nedbank-element-bottom-padding: 5px;
+$Nedbank-export-input-right-margin: 16px;
+$Nedbank-export-button-top-margin: 28px;
+$Nedbank-back-svg-margin-top: 33px;
+$Nedbank-back-svg-margin-left: 30px;
+$Nedbank-img-rotate-90deg: rotate(90deg);
+$Nedbank-contextual-title-padding-top: 55px;
+$Nedbank-div-footer-element-allpadding: 10px 90px;
+$Font-weight-bold: bold;
+$Margin-9px: 9px;
+$Margin-160px: 160px;
+$Nedbank-spacing: 0.2px;
+$Nedbank-checkbox-disabled-border-color: #eee;
+$Nedbank-checkbox-disabled-color: #ccc;
+$Nedbank-img-rotate-270deg: rotate(270deg);
+$Nedbank-light-green-checkbox:#78BE20;
+
+//SVG image icon
+$Nedbank-download-arrow-svg: url("./../assets/images/icons/download-green.svg") no-repeat;
+$Nedbank-help-text-svg: url("./../assets/images/icons/thin-0552_about_question_faq_help.svg") no-repeat;
+$Nedbank-loading-svg: url("./../assets/images/icons/loading_icon.svg") no-repeat;
+$Nedbank-icon-check-white-svg: url("./../assets/images/icons/Icon_Check_White.svg") no-repeat;
+$Nedbank-lighter-grey: #bbb;
+$Nedbank-padding-10px: 10px;
+$Nedbank-padding-20: 20px;
+$Value-50: 50%;
+$Nedbank-offwhite: #efefef;
+$Nedbank-white-background: #d5dadd;
+$Nedbank-grey-background: #777;
+$Nedbank-dark-blue: #337ab7;
+$font-size-24: 24px;
+$Nedbank-margin-2: 2px;
+$Nedbank-margin-20: 20px;
+$Nedbank-width-175: 175px;
+$Nedbank-width-390: 390px;
+$Nedbank-width-160: 160px;
+$Nedbank-height-50px: 50px;
+$Nedbank-height-35px: 35px;
+$Nedbank-margin-top-30: 30px;
+$NedBank-line-span: solid 1px #979797;
+$NedBank-line-span-2px: solid 2px #979797;
+$NedBank-font-weight-600: 600;
+$Nedbank-norm-white: #e4f2d2;
+$font-weight-100: 100;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-800: 800;
+$font-weight-900: 900;
+$font-weight-300: 300;
+$btn-disabled: #d7d7d7;
+$highlight-gray: #4a4a4a;
+$Nedbank-norm-gray: #d7d7d7;
+$Nedbank-modal-border: 1px solid #888;
+$Nedbank-modal-background-color: rgba(0, 0, 0, 0.4);
+$font-weight-200: 200;
+$Nedbank-margin-30: 30px;
+$warning-message-color: #fceecc;
+$Nedbank-margin-50: 50px;
+$Nedbank-margin-15: 15px;
+$NedBank-height-400: 400px;
+$NedBank-width-400: 400px;
+$Nedbank-margin-8: 8px;
+$error-alert-color: #f8d5d7;
+$Nedbank-white-dark: #f9f9f9;
+$Nedbank-white-border: solid 2px #ffffff;
+$Nedbank-green-border: solid 2px #0c8450;
+$Nedbank-box-shadow: rgba(0, 0, 0, 0);
+$Nedbank-box-background: rgba(0, 0, 0, 0.3);
+$Nedbank-width-180: 180px;
+$border-radius-4: 4px;
+$Nedbank-mid-light-green: #7f8f85;
+$Nedbank-label-grey: #686868;
+$Nedbank-email-label: #343434;
+$border-white: #e5e5e5;
+$field-green: #0c8450;
+$progress-green: #15e88c;
+$text-grey-light: #6d7571;
+
+/* media queries */
+
+$breakpoint-not-small: "screen and (min-width: 480px)" !default;
+$breakpoint-medium: "screen and (min-width: 480px) and (max-width: 960px)" !default;
+$breakpoint-large: "screen and (min-width: 960px)" !default;
+$breakpoint-extra-large: "screen and (min-width: 1276px)" !default;
+
+$nlsg-icons: "nlsg-icons";
+$nlsg-icons-thin: "nlsg-icons-thin";
+
+// responsive
+
+$desktop-4k: 2560px;
+$desktop-large: 1440px;
+$desktop-medium: 1366px;
+$desktop-small: 1280px;
+$tablet-landscape: 1024px;
+$tablet-portrait: 768px;
+$smartphone: 640px;
+$small-smartphone: 320px;
+
+$spacing-none: 0 !default;
+
+$spacing-small: 15px !default;
+$spacing-small-mobile: 10px !default;
+
+$spacing-medium: 30px !default;
+$spacing-medium-mobile: 20px !default;
+
+$spacing-large: 60px !default;
+$spacing-large-mobile: 40px !default;
+
+/* fractions */
+
+$one-third: 33.33333%;
+$one-fifth: 20%;
+
+/* brand lightened 80% 50% 20% */
+
+$heritage-light-80: #427866;
+$heritage-light-50: #89aba0;
+$heritage-light-20: #d0ddd9;
+
+$primary-light-80: #388268;
+$primary-light-50: #84b1a1;
+$primary-light-20: #cee0d9;
+
+$secondary-light-80: #3eab62;
+$secondary-light-50: #88cb9e;
+$secondary-light-20: #cfead8;
+
+$tertiary-light-80: #94cb53;
+$tertiary-light-50: #bcdf95;
+$tertiary-light-20: $Nedbank-norm-white;
+
+/* accent */
+
+$accent-teal: #1376c4;
+$accent-lime: #cedc00;
+
+/* accent lightened  80% 50% 20% */
+
+$accent-lime-light-80: #d8e34c;
+$accent-lime-light-50: #e7ee92;
+$accent-lime-light-20: #f5f9d3;
+
+/* warning/ error */
+
+$deep-red: #aa2930;
+$warning-red: $Nedbank-redish;
+$warning-orange: #f2a900;
+$whitish-orange :#f5c6cb;
+
+/* warning / error lightened 80% 50% 20% */
+
+$deep-red-light-80: #bb545a;
+$deep-red-light-50: #d59598;
+$deep-red-light-20: #efd5d6;
+
+$warning-red-light-80: #db535a;
+$warning-red-light-50: #ea9399;
+$warning-red-light-20: #f7d4d7;
+
+$warning-orange-light-80: #f4ba48;
+$warning-orange-light-50: #f9d590;
+$warning-orange-light-20: #fceed3;
+
+/* greys */
+
+$dark-grey: #333;
+$medium-grey-color: #666;
+$light-grey: $Nedbank-lighter-grey;
+$light-grey-disabled: $btn-disabled;
+$very-light-grey: $Nedbank-checkbox-disabled-border-color;
+$almost-white: #f7f7f7;
+$almost-white-darker: #f6f6f6;
+$medium-grey-shade: #424242;
+$light-gray-white: #c7c7c7;
+
+/* solid */
+
+$white: $Nedbank-light-white;
+$black: #3f3f3f;
+
+/* tranparency */
+
+$alpha: 0.1;
+$black-a: darken($black, $alpha);
+
+/* extra */
+
+$highlight: #8bd2a3;
+$nav-border-green: $Nedbank-green-mid-border;
+$base-green: $Nedbank-green-lighter;
+$color-greenMedium: #0c8450;
+$color-greenDark: #006341;
+$color-greenDark-80: #007255;
+$color-greenDark-50: #007f33;
+$color-greenDark-20: #4fb776;
+$color-greenLight: #0c8450;
+$color-greenHighlight: #8bd2a3;
+$color-greenApple: #169b69;
+$color-greenAccent: #00b2a9;
+$color-greenLightest: #e4f2d2;
+$color-greenDarker: #115740;
+$info-window-color: #f0f0f0;
+$color-greenLighter: #7ed321;
+$color-greyLightest: #eee;
+
+$color-greyLight: #bbb;
+$primary: #006341;
+$secondary: #0c8450;
+$tertiary: #0c8450;
+$dark-grey: #333333;
+$medium-grey-color: #666666;
+$light-grey: #bbbbbb;
+$white: #ffffff;
+$very-light-grey: #eeeeee;
+$almost-white: #f9f9f9;
+$accent-blue: #00b2a9;
+$accent-lime: #cedc00;
+$warning-red-color: #e21d16;
+$light-white: #f5f5f5;
+$error-red: #d9534f;
+$warning-yellow-red: #f2a900;
+$light-grey-disabled: $light-grey;
+$base-green: $primary;
+$footer-grey: #e2e2e2;
+$font-weight: 500;
+$font-weight-400: 400;
+$font-weight-200: 200;
+$error-message-rgb: rgba(210, 38, 48, 0.2);
+$container-bg: #fff;
+$color-white: #fff;
+$color-greyMedium: #666;
+$disabled-button-color: #d7d7d7;
+$border-bottom-color: #d1d1d1;
+$Nedbank-norm-white: #e4f2d2;
+$Nedbank-norm-gray: #d7d7d7;
+$border-success-focus: #007f33;
+$btn-disabled: #d7d7d7;
+$highlight-gray: #4a4a4a;
+$Nedbank-green-dark: #115740;
+$spinner: #007f33;
+$Nedbank-lighter-grey: #979797;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$dropdown-border: #006827;
+$font-weight-normal: normal;
+$gray-light: #828282;
+$rectangle-header: rgba(255, 255, 255, 0.25);
+$highlight-dark-bg: $color-greyLight;
+$loader-mask-bg: rgba($color-white, 0.7);
+$color-spinner-primary: $secondary;
+$color-spinner: $color-white;
+$gainsboro: #dadada;
+$white-light-gray: #e3e3e3;
+$medium-light-gray: #c4c0c0;
+$black-light-gray:#1e1e1e;
+
+// Libre Franklin rebranding
+
+$primary-grey: #737373;
+$primary-focus: #16e88d;
+$spinner-secondary-btn-hover: #dbede5;
+$primary-btn-hover: #dbede5;
+$btn-primary-hover: #09603a;
+$secondary-disabled: $dim-grey;
+$secondary-bg-white: #ffffff;
+
+$input-field-focused: #16e88d;
+$input-field-default: #737373;
+$input-field-disabled: #bbbbbb;
+$input-field-disabled-bg: #e5e5e5;
+$input-field-error: #e21d16;
+
+$dropdown-field-focused: #16e88d;
+$dropdown-field-default: #737373;
+$dropdown-field-disabled: #bbbbbb;
+$dropdown-field-disabled-bg: #e5e5e5;
+$dropdown-field-error: #e21d16;
+
+$search-field-focused: #16e88d;
+$almost-light-red: #faebd7;
+$darkest-grey: #242422;
+$light-medium-grey: #e5e5e5;
+$light-base-green: #198a59;
+$almost-dark-black: #202020;
+$nedbank-light-grey: #bbbbbb;
+$light-white-gray: #ddd;
+$dark-grey-shade: #737373;
+$disabled-dark-grey: $dim-grey;
+$secondary-green: #0c8450;
+$light-green-shade: #0c8450;
+$dark-grey-light: #020202;
+
+$primary-grey: #737373;
+$primary-btn-hover: #dbede5;
+$secondary-bg-white: #ffffff;
+
+$input-field-default: #737373;
+$input-field-disabled-bg: #e5e5e5;
+
+$dropdown-field-default: #737373;
+$dropdown-field-disabled-bg: #e5e5e5;
+
+$help-text-grey: #737373;
+
+$dropdown-field-focused: #16e88d;
+$dropdown-field-default: #737373;
+$dropdown-field-disabled: #bbbbbb;
+$dropdown-field-disabled-bg: #e5e5e5;
+$dropdown-field-error: #e21d16;
+
+$search-field-focused: #16e88d;
+$search-field-default: #737373;
+
+$toggle-field-default: #737373;
+
+$checkbox-field-default: #737373;
+$checkbox-field-disabled-notChecked-border: #bbbbbb;
+$checkbox-field-disabled-notChecked-bg: #e5e5e5;
+$checkbox-field-disabled-Checked: $dim-grey;
+
+$radio-button-default: #737373;
+$radio-button-disabled-notChecked-border: #bbbbbb;
+$radio-button-disabled-notChecked-bg: #e5e5e5;
+$radio-button-disabled-Checked: $dim-grey;
+
+$select-field-default: #737373;
+$select-field-focused: #16e88d;
+$select-field-completed: #0c8450;
+$select-field-error: #e21d16;
+$select-field-disabled-border: #737373;
+$select-field-disabled-bg: #737373;
+
+$alert-orange-warning: #fee8da;
+$alert-dark-orange-warning: #F7873D;
+$alert-informative-bg: #dcebf6;
+$alert-bg-error-color: #fbdddc;
+$alert-bg-success-color: #dbede5;
+
+$tooltip-grey: #737373;
+$notes-text-grey-bg: #e5e5e5;
+$notes-text-black-color: #020202;
+
+$date-picker-field-placeholder: #737373;
+//Accordion
+
+$accordion-arrow-defualt-grey: #737373;
+
+/* typography */
+
+$text-libreFranklin-semibold: "Libre Franklin Semibold";
+$text-libreFranklin-regular: "Libre Franklin Regular";
+$text-libreFranklin-medium: "Libre Franklin Medium";
+$text-grey-color: #737373;
+$text-dark-brown-color: #2E2D2C;
+$text-black-color: #020202;
+$text-green-color: #0c8652;
+$border-color: #dbede5;
+$light-border-color: #BFBFBF;
+// Background color
+$line: #d2e4dc;
+$background-color: #effaf6;
+$navigation-bar-background-color: #020202;
+
+//header
+
+$header-height: 64px;
+$header-height-80: 80px;
+/* confetti */
+
+$confetti-1: #b2e0c4;
+$confetti-2: #99d5b0;
+$confetti-3: #7fcb9c;
+$confetti-4: #66c089;
+$warning-primary: $Nedbank-redish;
+$secondary-color: $color-greenMedium;
+$primary-80: $color-greenDark-80;
+$primary-50: $color-greenDark-50;
+$primary-20: $color-greenDark-20;
+$primary-darker-color: $color-greenDarker;
+
+$profile-selection-border-color: #E5E5E5;
+$profile-selection-button-hover: #EDF6F2;
+$profile-selection-button-border: #178957;
+$table-border: #E8E8E8;
+$warning-yellow-orange: #F4670A;
+
+$light-orange: #f5c6cb;
+
+$domestic-heading-popup: #10A867;
+$dark-grey-background: #a4a4a4;
