@@ -63,7 +63,7 @@ const Login = () => {
             <p>Access more than just banking with your Country ID username and password</p>
             <div className="safety-tip">
                <h3>Staying safe</h3>
-               <p>Fraudsters try to trick you into giving your login details via email, SMS and phone calls. Never share your login details with anyone. <a href="#">Learn more</a></p>
+               <p>Fraudsters try to trick you into giving your login details via email, SMS and phone calls. Never share your login details with anyone. <button type="button" className="link-button" style={{background:'none',border:'none',color:'#0078d4',textDecoration:'underline',cursor:'pointer',padding:0}} onClick={() => alert('Learn more about staying safe!')}>Learn more</button></p>
             </div>
          </div>
          <div className="login-right">
