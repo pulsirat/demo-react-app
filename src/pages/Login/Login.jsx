@@ -49,7 +49,7 @@ const Login = () => {
    return (
       <div className="login-container">
          <div className="login-left">
-            <h1>Experience the new <strong>Country ID</strong></h1>
+            <h1>Experience the new <strong>Country Client Onborading</strong></h1>
             <div className="features">
                <p>🔒 Secure</p>
                <p>👌 Easy</p>
